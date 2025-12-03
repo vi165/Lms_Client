@@ -3,27 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Signup Page</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <header class="header- container">
+
+    <header class="header-container">
         <div class="logo">
-            <img src="data:image/png;base64,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" alt="E sala cup namde" class="logo_image">
+            <img src="https://www.bmw-kunexclusive-chennai.in/themes/custom/bmw/images/BMW_White_Logo.svg"
+                 alt="BMW Logo" class="logo_image">
+            <span class="logo-text">BMW</span>
         </div>
-        
+
+        <nav class="head-container"> 
             <ul class="head-items">
-                <li class="head-item"><a href="home.html" class="head-link">Home</a>
+                <!-- <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li> -->
+                <li class="head-item"><a href="home.html" class="head-link">Home</a></li>
+                <li class="head-item"><a href="login.html" class="head-link">Login</a></li>
+                <li class="head-item"><a href="Contact.html" class="head-link">Contact</a></li>
+
+                <!-- <li class="head-item"><a href="home.html" class="head-link">Home</a></li>
+                <li class="head-item"><a href="login.html" class="head-link">Login</a></li> -->
             </ul>
         </nav>
     </header>
-    <form>
-        <h2>Sign Up Form</h2>
-        <input type="text" placeholder="Full Name" required><br><br>
-        <input type="email" placeholder="Email" required><br><br>
-        <input type="password" placeholder="Password" required><br><br>
-        <button type="submit">Sign Up</button>
-    </form>
-   
+
+    <p class="box-label">Zoom In</p>
+    <!-- Image Box -->
+    <div class="black-box first-box">
+        <img src="https://4kwallpapers.com/images/wallpapers/bmw-m4-competition-3840x1080-17098.jpg" alt="BMW Logo" class="box-image">
+    </div>
+
+    <!-- Second Box -->
+    <div class="black-box first-box rotate-box">
+        <img src="https://4kwallpapers.com/images/wallpapers/bmw-m4-competition-3840x1080-17098.jpg" alt="BMW Logo" class="box-image">
+    </div>
+
+    <!-- Third Box -->
+    <div class="black-box first-box skew-circle-box">
+        <img src="https://4kwallpapers.com/images/wallpapers/bmw-m4-competition-3840x1080-17098.jpg" alt="BMW Logo" class="box-image">
+    </div>
+
+    <!-- Fourth Box -->
+    <div class="black-box first-box anti-clockwise-box">
+        <img src="https://4kwallpapers.com/images/wallpapers/bmw-m4-competition-3840x1080-17098.jpg" alt="BMW Logo" class="box-image">
+    </div>
+
+    <!-- Fifth Box -->
+    <div class="black-box first-box rotate-skew-box">
+        <img src="https://4kwallpapers.com/images/wallpapers/bmw-m4-competition-3840x1080-17098.jpg" alt="BMW Logo" class="box-image">
+    </div>
+
+    <!-- Down Black Box -->
+    <div class="black-box">
+    </div>
+
+
 </body>
 </html>
