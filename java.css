@@ -1,0 +1,9 @@
+// function cli() {
+//     const heading = document.getElementById("data")
+//     heading.innerText = "hyy buddyyyy!! (❁´◡`❁)"
+// }
+
+function cli() {
+    const heading = document.getElementById("data")
+    heading[2].innerText = "hyy buddyyyy!! (❁´◡`❁)"
+}
